@@ -78,11 +78,11 @@
             </div>
             <div class="col-lg-4">
                 <label class="form-label" for="quantity">Anno di pubblicazione</label>
-                <input class="form-control" type="number" id="year" name="year" max="2024" placeholder="Inserisci l'anno" required>
+                <input class="form-control" type="number" id="year" name="year" size="4" placeholder="Inserisci l'anno" required>
             </div>
             <div class="col-lg-4">
                 <label class="form-label" for="quantity">ISBN#</label>
-                <input class="form-control" type="number" id="quantity" name="quantity" maxlenght="13" placeholder="Inserisci il codice ISBN#" required>
+                <input class="form-control" type="number" id="quantity" name="quantity" size="13" placeholder="Inserisci il codice ISBN#" required>
             </div>
             <span class="form-text mt-4">Tutti i precedenti campi sono obbligatori</span>
             <hr>
@@ -90,14 +90,13 @@
                 <label for="exampleFormControlTextarea1" class="form-label">Note</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Inserisci eventuali note sul libro"></textarea>
             </div>
-            <div class="form-check ps-4 ms-2">
-                <input class="form-check-input" type="checkbox" id="flexCheckDefault">
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexCheckDefault" role="switch">
                 <label class="form-check-label" for="flexCheckDefault">Disponibile anche in digitale</label>
             </div>
             <div>
-                <a href="add_book.html"><button type="button" class="btn btn-lg btn-primary">Aggiungi Libro</button></a>
+                <input class="btn btn-lg btn-primary" type="submit" value="Aggiungi Libro">
             </div>
-  
 
         </form>
     </main>
